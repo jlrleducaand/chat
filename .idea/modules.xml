@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/2DAW_2324.iml" filepath="$PROJECT_DIR$/.idea/2DAW_2324.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DWES/Trim1/Genericos2324/Genericos2324.iml" filepath="$PROJECT_DIR$/DWES/Trim1/Genericos2324/Genericos2324.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DWES/Trim1/repasojava/RepasoJava.iml" filepath="$PROJECT_DIR$/DWES/Trim1/repasojava/RepasoJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DWES/Trim1/Genericos2324/ejercicios_big_decimal.iml" filepath="$PROJECT_DIR$/DWES/Trim1/Genericos2324/ejercicios_big_decimal.iml" />
+    </modules>
+  </component>
+</project>

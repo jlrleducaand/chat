@@ -7,14 +7,20 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="RepasoJava" />
-        <module name="ejercicios_big_decimal (1)" />
-        <module name="ejercicios_big_decimal" />
+        <module name="ApendiceGenericosM" />
+        <module name="StreamsLambdas" />
+        <module name="Genericos2324" />
+        <module name="PruebaParcialPractica1" />
+        <module name="Anotaciones" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AnotacionesM" target="19" />
+      <module name="ApendiceGenericosPrecisionDouble" target="19" />
       <module name="ejercicios_big_decimal" target="19" />
       <module name="ejercicios_big_decimal (1)" target="19" />
-      <module name="RepasoJava" target="19" />
+      <module name="PruebaParcialPractica1M" target="19" />
+      <module name="StreamLambdasM" target="19" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6f034e3c-aeb9-4be4-8710-aa517a700bbc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/src/anotaciones1/AnotacionEmpleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/src/anotaciones1/AnotacionEmpleados.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/src/main/java/Controler/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/src/main/java/modelo/Directivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/src/main/java/modelo/Empleado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/src/main/java/modelo/Empresa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/src/main/java/modelo/Oficial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/src/main/java/modelo/Operario.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/src/main/java/modelo/Tecnico.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/src/main/java/modelo/UtilContexto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM/src/test/test/EmpresaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesM1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../AnotacionesP/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApendiceGenericosM/apendice_genericos/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApendiceGenericosM/apendice_genericos/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApendiceGenericosM/apendice_genericos/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApendiceGenericosM/apendice_genericos/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApendiceGenericosM/apendice_genericos/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApendiceGenericosM/apendice_genericos/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApendiceGenericosM/apendice_genericos/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApendiceGenericosM/apendice_genericos/src/main/java/org/iesvdm/Caja.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApendiceGenericosM/apendice_genericos/src/main/java/org/iesvdm/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApendiceGenericosM/apendice_genericos/src/test/java/DoublePrecisionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApendiceGenericosM/apendice_genericos/src/test/java/GenericosTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ApendiceGenericosM/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/Genericos/ejerciciosGenericosTest/ejerciciosGenericosTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/Genericos/ejerciciosGenericosTest/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/Genericos/ejerciciosGenericosTest/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/allclasses-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/allpackages-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/copy.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/element-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/help-doc.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-10.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-11.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-12.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-13.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-14.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-15.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-16.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-17.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-18.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-19.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-8.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index-files/index-9.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/jquery-ui.overrides.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/legal/ADDITIONAL_LICENSE_INFO" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/legal/ASSEMBLY_EXCEPTION" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/legal/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/legal/jquery.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/legal/jqueryUI.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/module-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/Factorial.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/FactorialTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/InteresCompuesto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/InteresCompuestoTest.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/genericos/ListaOrdenadaComparable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/genericos/MatrizGenerica.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/genericos/PilaGenerica.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/genericos/ej1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/genericos/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/genericos/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/haversine/Posicion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/haversine/TODOTEST.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/haversine/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/haversine/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/Account.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/Address.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/Customer.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/LineItem.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/Order.OrderStatus.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/Order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/Paiment.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/Phone.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/Product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/ShoppingCart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/WebUser.UserState.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/WebUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/onlineshopping/testWebCustomerAccount.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/org/iesvdm/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/overview-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/overview-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/script-dir/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/script-dir/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/script-dir/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/script.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/search-page.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/search.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/stylesheet.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/tag-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/Doc/type-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/bigDecimal/Factorial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/bigDecimal/InteresCompuesto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/bigDecimal/haversine/Posicion.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/bigDecimal/onlineshopping/Account.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/bigDecimal/onlineshopping/Address.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/bigDecimal/onlineshopping/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/bigDecimal/onlineshopping/LineItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/bigDecimal/onlineshopping/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/bigDecimal/onlineshopping/Paiment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/bigDecimal/onlineshopping/Phone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/bigDecimal/onlineshopping/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/bigDecimal/onlineshopping/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/bigDecimal/onlineshopping/WebUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/genericos/ListaOrdenadaComparable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/genericos/MatrizGenerica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/genericos/PilaGenerica.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/genericos/ej1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/genericos/pruebas/Caja.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/genericos/pruebas/DemoGenericos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/genericos/pruebas/Par.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/genericos/pruebas/ParImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/main/java/org/genericos/pruebas/Util.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/test/java/Genericos/ejerciciosGenericosTest/ejerciciosGenericosTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/test/java/org/bigDecimal/FactorialTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/test/java/org/bigDecimal/InteresCompuestoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/test/java/org/bigDecimal/haversine/TODOTEST.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Genericos_2324/src/test/java/org/bigDecimal/onlineshopping/testWebCustomerAccount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p1/modelo/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p1/modelo/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p1/modelo/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p1/modelo/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p1/modelo/TaxType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p3/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p3/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p3/Usersss.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p3/UtilContexto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/test/java/itemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/src/main/java/org/iesvdm/Dish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/src/main/java/org/iesvdm/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/src/test/java/MenuTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../proyectoEnPaquete/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../AnotacionesM/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Trim1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AnotacionesM/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Genericos2324" beforeDir="false" afterPath="$PROJECT_DIR$/../Genericos2324" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ejercicios_big_decimal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repasojava" beforeDir="false" afterPath="$PROJECT_DIR$/../repasojava" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2XCoiKs9jOYX0BjL6SfERonShLT" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="flattenPackages" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/CLASES2023/2DAW_2324/DWES",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6f034e3c-aeb9-4be4-8710-aa517a700bbc" name="Changes" comment="" />
+      <created>1698142549214</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698142549214</updated>
+      <workItem from="1698142550407" duration="818000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

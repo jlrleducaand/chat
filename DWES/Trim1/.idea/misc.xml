@@ -1,13 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/repasojava/pom.xml" />
         <option value="$PROJECT_DIR$/Genericos2324/pom.xml" />
         <option value="$PROJECT_DIR$/ejercicios_big_decimal/pom.xml" />
+        <option value="$PROJECT_DIR$/AnotacionesM/pom.xml" />
+        <option value="$PROJECT_DIR$/ApendiceGenericosM/pom.xml" />
+        <option value="$PROJECT_DIR$/PruebaParcialPractica1M/pom.xml" />
+        <option value="$PROJECT_DIR$/StreamLambdasM/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_19" default="true" project-jdk-name="openjdk-19" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/Target" />
+  </component>
 </project>

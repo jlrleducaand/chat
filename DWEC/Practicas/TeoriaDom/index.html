@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- link para BootStrap CSS -->  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+  <div id="container" class="container-fluid">
+
+    <div id="cabecera" class="row">
+      <div class="col-10  bg-secondary text-center">
+        <h1 id="miTitulo">Aqui va el titulo con H1</h1>
+      </div>
+      <div class="col align-self-center">
+        <button type="button" name="boton" id="boton" class="btn btn-primary" btn-lg btn-block">Pulsame</button>
+      </div>
+    </div>
+
+    <div id="fila1" class="row">
+      <div id="f1c1" class="col">f1c1</div>
+      <div id="f1c2" class="col">f1c2</div>
+      <div id="f1c3" class="col">f1c3</div>
+    </div>
+
+    <div id="fila2" class="row">
+      <div id="f2c1" class="col">f2c1</div>
+      <div id="f2c2" class="col">f2c2</div>
+      <div id="f2c3" class="col">f2c3</div>
+    </div>
+
+    <div id="row-img" class="row">
+      <img src="" id="imgid"  class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}"
+        alt="Imagen vacía">
+      
+    </div>
+
+  </div>
+
+  <script src="/TeoriaDom/js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
+
+<!-- 
+- Crear plantilla BootStrap4 (teniendo instalada la extensión de BootStrap).
+- Quitar la parte final de javascript de BootStrap, que no vamos a utilizar.
+- Crear la estructura de divs:
+  + container-fluid
+    + row justify-content-center
+      + col-10 bg-secondary text-center (aquí va el título con H1)
+      + col align-self-center (aquí va el botón)
+    + row (id: fila1)
+      + col (id: f1c1)
+      + col (id: f1c2)
+      + col (id: f1c3)
+    + row (id: fila2)
+      + col (id: f2c1)
+      + col (id: f2c2)
+      + col (id: f2c3)
+    + row (aquí va una imagen, solamente  con atributo alt)
+- Añadir al final la etiqueta para llamar a main.js
+
+ -->
