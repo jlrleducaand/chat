@@ -5,12 +5,52 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d0f74fb9-ef87-43a3-bde5-69001fb0e849" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p1/modelo/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p1/modelo/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p1/modelo/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p1/modelo/Status.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p1/modelo/TaxType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p3/Login.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p3/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p3/Usersss.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/main/java/p3/UtilContexto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/src/test/java/itemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/src/main/java/org/iesvdm/Dish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/src/main/java/org/iesvdm/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../StreamLambdasM/src/test/java/MenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Trim1.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PruebaParcialPractica1M/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_10_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/libraries/Maven__org_opentest4j_opentest4j_1_3_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Anotaciones" beforeDir="false" afterPath="$PROJECT_DIR$/../Anotaciones" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Genericos2324" beforeDir="false" afterPath="$PROJECT_DIR$/../Genericos2324" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../repasojava" beforeDir="false" afterPath="$PROJECT_DIR$/../repasojava" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +58,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -31,39 +71,30 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
-    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="flattenPackages" value="true" />
+    <option name="foldersAlwaysOnTop" value="false" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
-    <option name="showScratchesAndConsoles" value="false" />
     <option name="showVisibilityIcons" value="true" />
+    <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/CLASES2023/2DAW_2324/DWES/Trim1/StreamLambdas",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -73,6 +104,9 @@
       <option name="presentableId" value="Default" />
       <updated>1698158631120</updated>
       <workItem from="1698158632422" duration="1208000" />
+      <workItem from="1701677662710" duration="269000" />
+      <workItem from="1701677950749" duration="30000" />
+      <workItem from="1701678029583" duration="784000" />
     </task>
     <servers />
   </component>

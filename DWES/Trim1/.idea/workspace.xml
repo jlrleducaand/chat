@@ -5,10 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e96ef859-c54a-4cfd-bf4b-538efa613139" name="Changes" comment="repositorios reubicados en Trim1">
-      <change afterPath="$PROJECT_DIR$/../../.idea/2DAW_2324.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Documentos/_Plataformas de programación Web en entorno servidor.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Documentos/clone_vs_fork_GIT.docx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Genericos2324" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Genericos2324/src/main/java/org/genericos/pruebas/Caja.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Genericos2324/src/main/java/org/genericos/pruebas/DemoGenericos.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Genericos2324/src/main/java/org/genericos/pruebas/Par.java" afterDir="false" />
@@ -32,14 +28,16 @@
       <change afterPath="$PROJECT_DIR$/PruebaParcialPractica1M/src/main/java/p3/Usersss.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/PruebaParcialPractica1M/src/main/java/p3/UtilContexto.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/PruebaParcialPractica1M/src/test/java/itemTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repasojava" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrimPrim/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrimPrim/.idea/TrimPrim.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrimPrim/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrimPrim/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../TrimPrim/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lib/hamcrest-core-1.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../lib/junit-4.13.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamLambdasM/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamLambdasM/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamLambdasM/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamLambdasM/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamLambdasM/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamLambdasM/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamLambdasM/src/main/java/org/iesvdm/Dish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamLambdasM/src/main/java/org/iesvdm/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/StreamLambdasM/src/test/java/MenuTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentos/Lambdas y Streams (2).docx" beforeDir="false" afterPath="$PROJECT_DIR$/../Documentos/Lambdas y Streams (2).docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/Trim1.iml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PruebaParcialPractica1M/.idea/compiler.xml" afterDir="false" />
@@ -56,6 +54,20 @@
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones/src/main/java/Controler/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones/src/main/java/Controler/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones/src/main/java/anotaciones1/AnotacionEmpleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones/src/main/java/anotaciones1/AnotacionEmpleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/Directivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/Directivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/Empresa.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/Oficial.java" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/Oficial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/Operario.java" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/Operario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/Tecnico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/UtilContexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones/src/main/java/modelo/UtilContexto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Anotaciones/src/test/test/EmpresaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Anotaciones/src/main/java/test/EmpresaTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Genericos2324" beforeDir="false" afterPath="$PROJECT_DIR$/Genericos2324" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Genericos2324/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Genericos2324/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Genericos2324/src/Doc/org/iesvdm/Factorial.html" beforeDir="false" afterPath="$PROJECT_DIR$/Genericos2324/src/Doc/org/iesvdm/Factorial.html" afterDir="false" />
@@ -96,9 +108,32 @@
       <change beforePath="$PROJECT_DIR$/Genericos2324/src/test/java/org/iesvdm/InteresCompuestoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Genericos2324/src/test/java/org/bigDecimal/InteresCompuestoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Genericos2324/src/test/java/org/iesvdm/haversine/TODOTEST.java" beforeDir="false" afterPath="$PROJECT_DIR$/Genericos2324/src/test/java/org/bigDecimal/haversine/TODOTEST.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Genericos2324/src/test/java/org/iesvdm/onlineshopping/testWebCustomerAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/Genericos2324/src/test/java/org/bigDecimal/onlineshopping/testWebCustomerAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ejercicios_big_decimal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/repasojava" beforeDir="false" afterPath="$PROJECT_DIR$/repasojava" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repasojava/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/repasojava/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/Genericos2324" beforeDir="false" afterPath="$PROJECT_DIR$/../TrimPrim/Genericos2324" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/src/main/java/org/iesvdm/Dish.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/src/main/java/org/iesvdm/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/src/main/java/org/iesvdm/mainBigDecimal.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/src/test/java/MenuTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/target/classes/org/iesvdm/Dish$Type.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/target/classes/org/iesvdm/Dish.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/target/classes/org/iesvdm/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/target/classes/org/iesvdm/mainBigDecimal.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/StreamLambdasM/target/test-classes/MenuTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/apendice_genericos" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/ejercicios_big_decimal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TrimPrim/tienda-informatica" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,25 +178,25 @@
     <option name="showMembers" value="true" />
     <option name="showVisibilityIcons" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "openjdk-19",
-    "last_opened_file_path": "C:/CLASES2023/2DAW_2324/DWES/TrimPrim/StreamLambdasM",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/CLASES2023/2DAW_2324/DWES/Trim1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\CLASES2023\2DAW_2324\DWES\Trim1\Anotaciones" />
@@ -176,7 +211,7 @@
       <recent name="C:\CLASES2023\2DAW_2324\DWES\Trim1\AnotacionesM" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.FactorialTest.cuandoFactorial1234">
     <configuration name="Anotaciones.src.main.java.Controler.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Anotaciones.src.main.java.Controler.Main" />
       <module name="Trim1" />
@@ -203,37 +238,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmpresaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Trim1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.EmpresaTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="EmpresaTest.before" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Trim1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.EmpresaTest" />
-      <option name="METHOD_NAME" value="before" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="EmpresaTest.testProContexto" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Trim1" />
       <extension name="coverage">
@@ -250,13 +254,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FactorialTest.cuandoFactorial1234" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ejercicios_big_decimal" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.iesvdm.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.iesvdm" />
+      <option name="MAIN_CLASS_NAME" value="org.iesvdm.FactorialTest" />
+      <option name="METHOD_NAME" value="cuandoFactorial1234" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="itemTest.iemt1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="PruebaParcialPractica1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="itemTest" />
+      <option name="METHOD_NAME" value="iemt1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FactorialTest.cuandoFactorial1234" />
+        <item itemvalue="JUnit.itemTest.iemt1" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Anotaciones.src.main.java.Controler.Main" />
         <item itemvalue="JUnit.EmpresaTest.testProContexto" />
-        <item itemvalue="JUnit.EmpresaTest.before" />
-        <item itemvalue="JUnit.EmpresaTest" />
       </list>
     </recent_temporary>
   </component>
@@ -297,6 +327,8 @@
       <workItem from="1698059063601" duration="12003000" />
       <workItem from="1698155308505" duration="1503000" />
       <workItem from="1698158293563" duration="2545000" />
+      <workItem from="1700482152032" duration="1105000" />
+      <workItem from="1701711131395" duration="267000" />
     </task>
     <task id="LOCAL-00001" summary="repositorios reubicados en Trim1">
       <created>1696774157223</created>

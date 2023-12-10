@@ -16,7 +16,7 @@ public class itemTest {
         Item i2 = new Item("Apple MacBook Pro M1 Pro", new BigDecimal(1.300),new BigDecimal(1758.95));
 
         OrderDetail detallesOrden = new OrderDetail(new BigDecimal(1),i1);
-      Order nuevo =  new Order(LocalDate.now(),)
+      Order nuevo =  new Order(LocalDate.now());
 
     }
 
