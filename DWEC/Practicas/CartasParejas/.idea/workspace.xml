@@ -4,117 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a93c2032-aab4-43a8-8e8e-5b0b5727c11b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/10C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/10D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/10H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/10S.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/2C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/2D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/2H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/2S.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/3C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/3D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/3H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/3S.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/4C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/4D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/4H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/4S.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/5C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/5D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/5H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/5S.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/6C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/6D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/6H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/6S.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/7C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/7D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/7H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/7S.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/8C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/8D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/8H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/8S.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/9C.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/9D.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/9H.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/9S.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/AC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/AD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/AH.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/AS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/JC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/JD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/JH.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/JS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/KC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/KD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/KH.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/KS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/QC.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/QD.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/QH.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/QS.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/grey_back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/cartas/red_back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/img/logo_vega_de_mijas.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/css/styles.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/funciones.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/underscore-min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../DWES/Documentos/configuracion de Tomcat y mysql en Inteliji.docx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../DWES/Documentos/Lambdas y Streams (2).docx" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DWES/Documentos/Lambdas y Streams (2).docx" afterDir="false" />
+    <list default="true" id="a93c2032-aab4-43a8-8e8e-5b0b5727c11b" name="Changes" comment="primer Commit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../DWES/Trim1/Genericos2324" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DWES/Trim1/Genericos2324" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../DWES/Trim1/repasojava" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DWES/Trim1/repasojava" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../../DWES/TrimPrim/Genericos2324" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DWES/TrimPrim/Genericos2324" afterDir="false" />
@@ -145,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/CLASES2023/2DAW_2324/DWEC/Practicas/CartasParejas/js",
+    "last_opened_file_path": "C:/CLASES2023/2DAW_2324/DWEC/Practicas/CartasParejas",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -173,10 +64,23 @@
       <option name="presentableId" value="Default" />
       <updated>1702642355527</updated>
       <workItem from="1702642356771" duration="5127000" />
+      <workItem from="1702677936895" duration="558000" />
     </task>
+    <task id="LOCAL-00001" summary="primer Commit">
+      <created>1702678379769</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1702678379769</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="primer Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="primer Commit" />
   </component>
 </project>
