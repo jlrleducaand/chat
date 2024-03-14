@@ -1,0 +1,20 @@
+<p class="title"> Mi Carrito</p>
+
+<!--<button class="toggle" (click)="toggleShowList()">
+    {{showList? "Ocultar":"Mostrar"}}
+</button><br>-->
+
+<!--<ng-container *ngIf="showList">-->
+<app-shopping-cart-item
+        *ngFor="let item of cartItems; trackBy: trackByItemId"
+        [cartItem]="item"
+        (cartItemDelete)="deleteItem(item)"
+></app-shopping-cart-item>
+<!--</ng-container>-->
+<p class="total"><span class="total-label">Importe Total</span>{{total}}</p>
+
+<button class="btn" >Ocultar Listado</button>
+<button class="btn" (click)="addNewCartItem()">Añadir Nuevo</button>
+<button class="btn" (click)="reverseList()">Invertir</button>
+<button class="btn" (click)="reloadFromServer()">Recargar</button>
+

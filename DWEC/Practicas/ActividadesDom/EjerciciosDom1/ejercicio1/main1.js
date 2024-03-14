@@ -1,7 +1,7 @@
 // VARIABLES
 let contadorFil = 2;  // el sitio web contendra un numero de filas indeterminados filas
 // comenzamos en fila 2  la fila 1 es para las cabeceras dispuestas en el html
-
+let filas = document.getElementById('filas');
 //  FUNCIONES
 function createNewLine() {  // cuando Click sobre el boton creamos una nueva linea 
     // VARIABLES  GLOBALES 
@@ -9,7 +9,6 @@ function createNewLine() {  // cuando Click sobre el boton creamos una nueva lin
     let nume2 = 0;
     let contadorCol = 1;    // cada fila contendra un numero de campos determinados (4 MAX)
 
-    function boton_click() {    // esta funcion salta automaticamente por los ()
         const numestr = pideNumero();  // almacenamos el numero tras su verificacion por funcion  pideNumero()
 
         // Campo 1
@@ -17,9 +16,9 @@ function createNewLine() {  // cuando Click sobre el boton creamos una nueva lin
             let columna = "f" + contadorFil + "col" + contadorCol; // formacion de la cadena id 
             const celda1 = document.createElement("div"); // crea elemento que contendra el Campo
             celda1.id = columna;            // seteamos el atributo id a celda2            
-            celda1.className = "col-2  p-2 text-center";// seteamos el atributo clases  de celda2
+            celda1.className = "col-2  p-2 text-center ";// seteamos el atributo clases  de celda2
             celda1.innerText = numestr;     // seteamos el contenido de celda2
-            document.getElementById("res").appendChild(celda1);  // inserta el codigo en Dom
+            filas.appendChild(celda1);  // inserta el codigo en Dom
 
             nume1 = +numestr;   // paso a numérico
             contadorCol++;      // siguiente columna
@@ -31,12 +30,12 @@ function createNewLine() {  // cuando Click sobre el boton creamos una nueva lin
             celda2.id = columna;            // seteamos el atributo id a celda2
             celda2.className = "col-2  p-2 text-center";// seteamos el atributo clases  de celda2
             celda2.innerText = numestr;     // seteamos el contenido de celda2
-            document.getElementById("res").appendChild(celda2); // inserta el codigo en Dom
+            filas.appendChild(celda2);  // inserta el codigo en Dom
 
-            nume2 = +numestr;   // paso a numérico
+            nume2 = +numestr2;   // paso a numérico
             contadorCol++;      // siguiente columna
 
-            // Campo 3   no pasamos este if  hasta que hemos pasado por el Campo 2 por eso va dentro de el
+            // Campo 3   no pasamos este if  hasta que hemos pasado por el Campo 2 por eso va dentro de él anidado
             if (contadorCol === 3) {  // condicion de paso
                 const mayor = nume1 + " es mayor que " + nume2;
                 const menor = nume1 + " es menor que " + nume2;
@@ -51,7 +50,7 @@ function createNewLine() {  // cuando Click sobre el boton creamos una nueva lin
                 resultadoCasilla.id = columna;                          // Seteo al id del nuevo campo
                 resultadoCasilla.className = "col-6  p-2 text-center";  // seteo de las clases del campo
                 resultadoCasilla.innerText = resultadoOperacion;        // introduccion del valor calculado     
-                document.getElementById("res").appendChild(resultadoCasilla); // inserta el codigo en Dom 
+                filas.appendChild(resultadoCasilla); // inserta el codigo en Dom 
 
                 contadorCol++;  // siguiente columna
             }
@@ -70,35 +69,41 @@ function createNewLine() {  // cuando Click sobre el boton creamos una nueva lin
                 imagenCasilla.id = columna;                         // Seteo al id del nuevo campo   
                 imagenCasilla.className = "col-2  p-2 text-center"; // seteo de las clases del campo
                 imagenCasilla.innerHTML = resultadoImagen;          // introduccion de la imagen asignada al calculo     
-                document.getElementById("res").appendChild(imagenCasilla); // inserta el codigo en Dom
+                filas.appendChild(imagenCasilla); // inserta el codigo en Dom
 
                 contadorFil++;      // siguiente fila
                 resetVariables();
             }
-        }
     }    
-    
 
-    return boton_click; //  se devuelve y se asigna nuevamente como manejador de eventos para el botón,
 
-    function resetVariables() {
-        nume1 = 0;
-        nume2 = 0;
-        contadorCol = 1;
+    //return boton_click; //  se devuelve y se asigna nuevamente como manejador de eventos para el botón,
+
+     
+}
+function borrarFilas(){ 
+
+    filas.innerHTML = '';
+
+}
+ 
+function resetVariables() {
+    nume1 = 0;
+    nume2 = 0;
+    contadorCol = 1;
+}
+
+function pideNumero() {
+    const numero = prompt("Introduce un número mayor de 0");
+    if (isNaN(numero) || +numero <= 0) {
+        return pideNumero();
     }
-
-    function pideNumero() {
-        const numero = prompt("Introduce un número mayor de 0");
-        if (isNaN(numero) || +numero <= 0) {
-            return pideNumero();
-        }
-        return numero;
-    }
+    return numero;
 }
 
 // LOGIC
-const boton = document.getElementById("boton");
+const boton = document.getElementById("pide_numero");
+const botonBorrar = document.getElementById('borrar_filas')
 
-
-
-boton.addEventListener("click", createNewLine()); // Boton en escucha
+boton.addEventListener("click", createNewLine); // Boton en escucha
+borrar_filas.addEventListener('click', borrarFilas ); 

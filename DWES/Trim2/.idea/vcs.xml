@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SBW_mvc_jbc_ventas" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/demoth" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/spring_boot_web_mvc_jdbc_ventas" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/tiendaInformatica" vcs="Git" />
+  </component>
+</project>

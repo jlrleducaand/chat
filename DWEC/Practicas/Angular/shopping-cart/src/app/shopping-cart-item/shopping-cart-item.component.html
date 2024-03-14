@@ -1,0 +1,9 @@
+
+<img class="ico-articulo" src="/assets/items/{{cartItem?.imageUrl}}" alt="{{cartItem?.name}}">
+<div class="info">
+    <span>{{cartItem?.name}}</span>
+    <span class="info-price">{{cartItem?.price}} €</span>
+</div>
+    <button (click)="onDeleteClicked()">
+        <img class="ico-boton" src="/assets/close.svg" alt="Eliminar articulo"/>
+    </button>

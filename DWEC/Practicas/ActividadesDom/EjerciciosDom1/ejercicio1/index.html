@@ -12,21 +12,24 @@
         
     </head>
 
-<body>
+<body class="container">
     <div id="container" class="container-fluid">
         <div id="cabecera" class="row   bg-primary text-center p-3">
             <h1 class="">Actividad 1 JavasCript y el DOM</h1>
         </div>
         <div class=" row  justify-content-center">
-            <button id="boton" class="col-2 btn bg-danger m-3">PIDE NUMERO</button>
+            <input type="button" id="pide_numero" class="col-2  bg-danger m-3" value="PIDE NUMERO">
+            <input type="button" id="borrar_filas" class="col-2  bg-warning m-3" value="BORRAR" onclick="alert('los datos seran borrados')">
+
         </div>
-        <div id="res" class="row">
+        <div id="res" class="row"> 
             <div id="f1col1" class="col-2  p-2 text-center text-bg-success">num1</div>
             <div id="f1col2" class="col-2  p-2 text-center text-bg-success" >num2</div>
             <div id="f1col3" class="col-6  p-2 text-center text-bg-success">resultado</div>
-            <div id="f1col4" class="col-2  p-2 text-center text-bg-success">imagen
-                           
-            </div>
+            <div id="f1col4" class="col-2  p-2 text-center text-bg-success">imagen</div>
+        </div>
+        <div class="d-flex"   id="filas" >
+
         </div>
     </div>
 
@@ -35,4 +38,4 @@
 
 </body>
 
-</html>
+</html> 

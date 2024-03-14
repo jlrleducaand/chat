@@ -1,0 +1,16 @@
+<div class="d-flex justify-content-between bg-primary">
+    <h3 class="logo text-white p-3">MyShop</h3>
+    <button class="btn bi bi-cart3 text-white ms-auto"
+            (click)="toggleShowList()">
+        {{showCart ? "Ocultar" : "Mostrar"}}
+        <span>{{itemCount}}</span>
+    </button>
+</div>
+<div>
+    <ng-container *ngIf="showCart; else catalogView">
+        <app-shopping-cart></app-shopping-cart>
+    </ng-container>
+    <ng-template #catalogView>
+        <app-catalog-product></app-catalog-product>
+    </ng-template>
+</div>

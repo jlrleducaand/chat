@@ -1,0 +1,19 @@
+
+
+
+<app-catalog-product>
+       <ng-container *ngFor="let item of miCatalogo; trackBy: trackByItemId" class="card mb-3">
+           <div *ngFor="let item of miCatalogo" class="card mb-3">
+               <div class="card-body">
+                   <img [src]="'/assets/items/' + item.imageUrl" [alt]="item.name">
+                   <h5>{{item.name}}</h5>
+                   <p>Email: {{item.imageUrl}}</p>
+                   <p>Room No.: {{item.price}}</p>
+                   <button class="btn btn-sm btn-danger mx-1" (click)="addToCart()">ADD</button>
+               </div>
+           </div>
+       </ng-container>
+</app-catalog-product>
+
+
+
