@@ -10,7 +10,6 @@ import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
 
-
 @Data
 @Entity
 @Table(name = "empleado")
@@ -18,7 +17,6 @@ import java.util.Set;
 @NoArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)  //solo los que tienen include
 public class Empleado {
-
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -30,7 +28,6 @@ public class Empleado {
     private String apellidos;
     private String direccion;
     private String telefono;
-
     private String ccc_empleado;
 
     @ManyToMany
@@ -42,7 +39,6 @@ public class Empleado {
     //@ToStringExclude    //Rompe el lazo de Serializacion
     Set<Cliente> clientes = new HashSet<>();
 
-
     @OneToMany(mappedBy = "empleado", fetch = FetchType.EAGER)
     @JsonIgnore         //Rompe el lazo de Serializacion
     @ToStringExclude    //Rompe el lazo de Serializacion
@@ -52,18 +48,12 @@ public class Empleado {
     @JsonFormat(pattern = "yyyy-MM-dd-HH:mm:ss",  shape = JsonFormat.Shape.STRING)
     private Date fecha_alta;
 
-
-
-
     // ******* CONSTRUCTORES PARA TESTS *********
-
-
     public Empleado(int id, String nombre, HashSet<Pedido> pedidos) {
         this.id = id;
         this.nombre = nombre;
         this.pedidos = pedidos;
     }
-
 
     public Empleado(String nombre, String apellidos,  Date fecha_alta) {
         this.id = 0;

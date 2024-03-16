@@ -22,14 +22,13 @@ import java.util.Optional;
 @RequestMapping("/v1/api/pedidos")
 public class PedidoController {
 
-    @Autowired
     private final PedidoService pedidoService;
     private final ProductoService productoService;
 
+    @Autowired
     public PedidoController(PedidoService pedidoService, ProductoService productoService) {
             this.pedidoService = pedidoService;
-        this.productoService = productoService;
-    }
+            this.productoService = productoService;    }
 
 
     @PostMapping({"","/"})
@@ -44,8 +43,7 @@ public class PedidoController {
 
     @PutMapping("/{id}")
     public Pedido replacePedido(@PathVariable("id") Long id, @RequestBody Pedido pedido) {
-        return this.pedidoService.replace(id, pedido);
-    }
+        return this.pedidoService.replace(id, pedido); }
 
     @ResponseBody
     @ResponseStatus(HttpStatus.NO_CONTENT)
@@ -54,30 +52,22 @@ public class PedidoController {
         this.pedidoService.delete(id);
     }
 
-
     @GetMapping(value = {"","/"}, params = {"!page", "!size", "!buscar", "!sort", "!column", "!orden", "!orden_"})
     //opcion2  params={""} no funciona
     public List<Pedido> all() {
         log.info("Accediendo a pedidos sin parametros");
-        return this.pedidoService.all();
-    }
+        return this.pedidoService.all();    }
 
-
-
-    @PutMapping(value ={"/{id}/addPro/{id}","/{id}/addPro/{id}/"})
-    public Pedido addPedidoProducto(@PathVariable("id") Long idPe, @PathVariable("id") Long idProd) {
-
-        log.info("Añadiendo producto con id "+ idProd +" al pedido con id " + idPe );
-        return addPedidoProducto(idPe, idProd);
-    }
-
+    @PutMapping("/addpro")
+    public Pedido addPedidoProducto(@RequestParam("idpe") Long idpe, @RequestParam("idpro") Long idpro) {
+        log.info("Añadiendo producto con id "+ idpro +" al pedido con id " + idpe );
+        return pedidoService.addAPedidoProducto(idpe, idpro);    }
 
     @GetMapping(value = {"", "/"}, params = {"page", "size", "sort"})
     // para los campos sort separar con coma (id, desc)
     public Page<Pedido> all(Pageable pageable) {
         log.info("Accediendo a pedidos paginadas 3 parametros: page size sort");
-        return this.pedidoService.getAll(pageable);
-    }
+        return this.pedidoService.getAll(pageable);    }
 
 
 

@@ -78,17 +78,17 @@ public class PedidoService {
     // ******************   CALCULOS y OPERACIONES SOBRE LA BASE DE DATOS     ******************
 
 
-    public Producto addProductoAPedido(Long idPed, Long idProd){
-        Pedido ped = one(idPed);
-        Producto prod = this.productoRepository.findById(idProd).get();
+    public Pedido addAPedidoProducto(Long idped, Long idprod){
+        Pedido ped = one(idped);
+        Producto prod = this.productoRepository.findById(idprod).get();
         if(!prod.getPedidos().contains(ped)){
             ped.getProductos().add(prod);
             save(ped);
-            numProductosPorPedido(idPed);
+            numProductosPorPedido(idped);
             log.info("producto" + prod + "añadido a pedido " + ped );
         }
 
-        return prod;
+        return one(idped);
     }
 
     public int numProductosPorPedido(Long idPedido) {

@@ -48,7 +48,7 @@ public class Pedido {
     private String observaciones;
 
     //Campo del que no queremos que se haga columna en la tabla
-    @Transient
+    //@Transient
     private int unidadesVendidas;
 
     @ManyToOne(fetch = FetchType.EAGER)
@@ -87,7 +87,6 @@ public class Pedido {
         this.empleado = empleado;
         this.productos = productos;
     }
-
     public Pedido(int id, Cliente cliente, Empleado empleado) {
         this.id = id;
         this.cliente = cliente;
