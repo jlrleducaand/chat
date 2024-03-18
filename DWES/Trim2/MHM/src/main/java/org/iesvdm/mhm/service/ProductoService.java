@@ -78,6 +78,8 @@ public class ProductoService  {
                 this.productoRepository.findProductoByProveedorContainingIgnoreCase(valor, pageable)
                 : campo.equalsIgnoreCase("stock") ?
                 this.productoRepository.findProductoByStock(valor, pageable)
+                :campo.equalsIgnoreCase("nombre") ?
+                this.productoRepository.findByNombreContainingIgnoreCaseOrderByNombreAsc(valor, pageable)
                 : this.getAll(pageable);
 
     }

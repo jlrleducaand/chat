@@ -97,7 +97,9 @@ import java.util.*;
         public ResponseEntity<Map<String,Object>> allOrden(
                 @RequestParam(value = "orden", required = false, defaultValue = "id, asc" ) String[] orden
         ){
-            log.info("Orden recibido en el controlador orden1 y orden2:" + orden);
+            for (String elemento : orden){
+                log.info("Orden recibido en el controlador: " + elemento);
+            }
             Map<String, Object> responseAll = null;
             String[] ordenSplited_0 = orden[0].split(",");
             String[] ordenSplited_1 = orden[1].split(",");
@@ -134,6 +136,11 @@ import java.util.*;
                 return ResponseEntity.badRequest().build();
             }
         }
+
+
+
+
+
 
 /*
 

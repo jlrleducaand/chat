@@ -1,7 +1,9 @@
 package org.iesvdm.mhm.domain;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.*;
 import lombok.*;
 import org.apache.commons.lang3.builder.ToStringExclude;
@@ -23,25 +25,25 @@ public class Empleado {
     @Column(name = "id_empleado")
     @EqualsAndHashCode.Include
     private long id;
-
     private String nombre;
     private String apellidos;
     private String direccion;
     private String telefono;
     private String ccc_empleado;
 
-    @ManyToMany
+    @ManyToMany (fetch = FetchType.EAGER)
     @JoinTable(name = "empl_clientes",
-        joinColumns = @JoinColumn (name = "id_cliente"),
-        inverseJoinColumns = @JoinColumn(name = "id_empleado")
+        joinColumns = @JoinColumn (name = "id_empleado"),
+        inverseJoinColumns = @JoinColumn(name = "id_cliente")
     )
-    //@JsonIgnore         //Rompe el lazo de Serializacion
-    //@ToStringExclude    //Rompe el lazo de Serializacion
+    @JsonIgnoreProperties({"clientes","empleados"})          //Rompe el lazo de Serializacion
+    @ToStringExclude    //Rompe el lazo de Serializacion
     Set<Cliente> clientes = new HashSet<>();
 
-    @OneToMany(mappedBy = "empleado", fetch = FetchType.EAGER)
-    @JsonIgnore         //Rompe el lazo de Serializacion
+    @OneToMany(mappedBy = "empleado", fetch = FetchType.LAZY)
+    @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})       //Rompe el lazo de Serializacion
     @ToStringExclude    //Rompe el lazo de Serializacion
+    @JsonBackReference
     Set<Pedido> pedidos = new HashSet<>();
 
     @Column(name = "fecha_alta")
@@ -49,10 +51,10 @@ public class Empleado {
     private Date fecha_alta;
 
     // ******* CONSTRUCTORES PARA TESTS *********
-    public Empleado(int id, String nombre, HashSet<Pedido> pedidos) {
+    public Empleado(int id, String nombre) {
         this.id = id;
         this.nombre = nombre;
-        this.pedidos = pedidos;
+        this.pedidos = new HashSet<Pedido>();
     }
 
     public Empleado(String nombre, String apellidos,  Date fecha_alta) {

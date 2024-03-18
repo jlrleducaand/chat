@@ -1,5 +1,6 @@
 package org.iesvdm.mhm.controller;
 
+import jakarta.transaction.Transactional;
 import lombok.extern.slf4j.Slf4j;
 import org.iesvdm.mhm.domain.Empleado;
 import org.iesvdm.mhm.service.EmpleadoService;
@@ -26,7 +27,7 @@ public class EmpleadoController {
         log.info("Accediendo a todas las empleados");
         return this.empleadoService.all();
     }
-
+    @Transactional
     @PostMapping({"","/"})
     public Empleado newEmpleado(@RequestBody Empleado empleado) {
         return this.empleadoService.save(empleado);

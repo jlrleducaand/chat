@@ -1,13 +1,12 @@
 package org.iesvdm.mhm.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.*;
 import org.apache.commons.lang3.builder.ToStringExclude;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 
-import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
@@ -18,70 +17,54 @@ import java.util.Set;
 @AllArgsConstructor
 @NoArgsConstructor
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
-//@EqualsAndHashCode(of = "id_pedido")
-
 public class Pedido {
-
     /*@Transient
     public SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");*/
-
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="id_pedido")
     @EqualsAndHashCode.Include
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
-    @Column(name = "fecha_pedido")
-    @JsonFormat(pattern = "yyyy-MM-dd-HH:mm:ss",  shape = JsonFormat.Shape.STRING)
-    private Date fecha;
-
-    @Column(name = "facturado")
-    private boolean facturado;
-
-    @Column(name = "fecha_factura")
-    @JsonFormat(pattern = "yyyy-MM-dd-HH:mm:ss",  shape = JsonFormat.Shape.STRING)
-    private Date fecha_factura;
-    private String factura_;
-
-    @Column(name = "enviado")
-    private boolean enviado;
-    private String observaciones;
-
-    //Campo del que no queremos que se haga columna en la tabla
-    //@Transient
-    private int unidadesVendidas;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_cliente", nullable = true) //nulable para tests
     @ToString.Exclude
-    //@JasonBackReference  solo en los one
     private Cliente cliente;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "id_empleado", nullable = true) //nulable para tests
-    //@JasonBackReference solo en los one
     @ToString.Exclude
     private Empleado empleado;
 
-    @ManyToMany(fetch = FetchType.EAGER)
-    @JoinTable(name = "producto_pedido",
-            joinColumns = @JoinColumn(name = "id_producto"),
-            inverseJoinColumns = @JoinColumn(name = "id_pedido")
-    )
+    @OneToMany(mappedBy = "pedido", cascade = CascadeType
+            .ALL, fetch = FetchType.EAGER)
     @ToStringExclude  //Para Romper el lazo y bucle
-    @JsonIgnore       //Para Romper el lazo
-    private Set<Producto> productos = new HashSet<>();
+    @JsonBackReference //solo en los one   *********
+    private Set<DetallePedProd> productos = new HashSet<>();
 
-    private double importeTotal;
-
+    @Transient
+    private double importeTotal = 0;
+    @Column(name = "fecha_pedido")
+    @JsonFormat(pattern = "yyyy-MM-dd-HH:mm:ss",  shape = JsonFormat.Shape.STRING)
+    private Date fecha_pedido;
+    @Column(name = "facturado")
+    private boolean facturado;
+    @Column(name = "fecha_factura")
+    @JsonFormat(pattern = "yyyy-MM-dd-HH:mm:ss",  shape = JsonFormat.Shape.STRING)
+    private Date fecha_factura;
+    @Transient
+    private int unidadesVendidas;
+    @Column(name = "enviado")
+    private boolean enviado;
+    private String observaciones;
 
     //Constructores `para tests
-    public <E> Pedido(long id, Cliente cliente, HashSet<Producto>  productos) {
+    public <E> Pedido(long id, Cliente cliente, HashSet<DetallePedProd>  productos) {
         this.id = id;
         this.cliente = cliente;
         this.productos = productos;
     }
-    public Pedido(long id, Cliente cliente, Empleado empleado, HashSet<Producto>  productos) {
+    public Pedido(long id, Cliente cliente, Empleado empleado, HashSet<DetallePedProd>  productos) {
         this.id = id;
         this.cliente = cliente;
         this.empleado = empleado;
