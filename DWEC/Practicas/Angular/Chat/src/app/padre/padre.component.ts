@@ -2,6 +2,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {SolicitanteInterface} from "./solicitanteInterface";
 import {HijoComponent} from "./hijo/hijo.component";
 import {JsonPipe, NgClass, NgForOf, NgIf} from "@angular/common";
+import {PersonaInterface} from "./personaInterface";
 
 @Component({
     selector: 'app-padre',
@@ -26,46 +27,22 @@ export class PadreComponent implements OnInit {
     ]
     cola: number[] = [];
     turno: string = "";
-    solicitanteRecibido: SolicitanteInterface | undefined = {} as SolicitanteInterface;
+    personaRecibida: PersonaInterface | undefined = {} as SolicitanteInterface;
     estadoSesion: boolean = false;
 
-    @Input() evPidiendoTurno: EventEmitter<number> = new EventEmitter<number>();
-
-    @Output() evAbrir: EventEmitter<boolean> = new EventEmitter<boolean>();
+    evActualizaSolicitantes: EventEmitter<any> = new EventEmitter<any>();
 
     ngOnInit(): void {
     }
 
-    verificaTurno($event: number) {
-        this.solicitanteRecibido = this.solicitantes.find(x => x.id === $event);
-        if (this.solicitanteRecibido) {
-            if (this.turno === "") {
-                this.turno = this.solicitanteRecibido.nombre;
-                console.log("añadido nombre a turno " + $event);
-                this.solicitanteRecibido.estado = "Terminar Turno";
-                this.solicitanteRecibido.imagen = "./assets/imagenes/joven3c.png";
-
-            } else if (!this.cola.includes($event) &&
-                this.turno != this.solicitantes[$event - 1].nombre) {
-                this.cola.push($event);
-                this.solicitanteRecibido.imagen = "./assets/imagenes/joven3b.png";
-                this.solicitanteRecibido.estado = "Salir Cola"
-                console.log("Salido de la Cola" + $event);
-                console.log(this.cola);
-
-            } else if (this.solicitanteRecibido.nombre === this.turno) {
-                this.solicitanteRecibido.imagen = "./assets/imagenes/joven3a.png";
-                this.solicitanteRecibido.estado = "Pedir Turno";
-                this.turno = this.siguiente(this.cola[0]);
-                this.cola.shift();
-
-            } else if (this.solicitanteRecibido.nombre != this.turno && this.cola.includes(this.solicitanteRecibido.id))
-            {
-                this.solicitanteRecibido.imagen = "./assets/imagenes/joven3a.png";
-                this.solicitanteRecibido.estado = "Pedir Turno";
-                this.cola = this.cola.filter(id => id !== this.solicitanteRecibido?.id);
-
-            }
+    verificaTurno($event: PersonaInterface) {
+        this.personaRecibida = $event;
+        if (this.personaRecibida.estado === "Dejar Turno"){
+            this.turno = this.personaRecibida.nombre;
+        }else if(this.personaRecibida.estado === "Dejar Cola"){
+            this.cola.push(this.personaRecibida.id);
+        }else if(this.personaRecibida.estado === "Pedir Turno"){
+            this.cola = this.cola.filter(id => id !== this.personaRecibida?.id);
         }
 
     }
@@ -77,7 +54,7 @@ export class PadreComponent implements OnInit {
                 nombre = s.nombre;
                 s.estado = "Termina Turno"
                 s.imagen = "./assets/imagenes/joven3c.png"
-                this.solicitanteRecibido = s;
+                this.personaRecibida = s;
 
             }
         });
