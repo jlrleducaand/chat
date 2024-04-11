@@ -17,12 +17,12 @@ import {JsonPipe, NgClass, NgForOf, NgIf} from "@angular/common";
 export class PadreComponent implements OnInit {
 
     solicitantes: SolicitanteInterface[] = [
-        {id: 1, nombre: "Mario", imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 2, nombre: "Duarte", imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 3, nombre: "Carmen", imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 4, nombre: "Ismael", imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 5, nombre: "Jose Luis", imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 6, nombre: "David", imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"}
+        {id: 1, nombre: "Mario"     , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
+        {id: 2, nombre: "Duarte"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
+        {id: 3, nombre: "Carmen"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
+        {id: 4, nombre: "Ismael"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
+        {id: 5, nombre: "Jose Luis" , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
+        {id: 6, nombre: "David"     , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"}
     ]
     cola: number[] = [];
     turno: string = "";
@@ -84,15 +84,7 @@ export class PadreComponent implements OnInit {
         return nombre;
     }
 
-    cambiarEstado() {
-        console.log("boton de Hijo Pulsado", this.estadoSesion);
-        if (this.turno != "") {
-            this.estadoSesion = !this.estadoSesion;
-            this.evAbrir.emit(this.estadoSesion);
 
-        }
-
-    }
 
 
 }
