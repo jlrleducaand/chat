@@ -1,0 +1,13 @@
+<div class="hijo">
+    <p>hijo works!</p>
+    <div>
+        <img [src]="imagenHijo" alt="imagen hijo">
+        <h3>{{ nombreHijo }}</h3>
+        <h3>{{ id }}</h3>
+        <button class="btn btn-primary" (click)="pideTurno()"
+
+                >{{ estadoHijo }}
+<!--*ngIf="estadoHijo != 'Dejar Turno' && estadoHijo != 'Esperar Turno' " [disabled]="false"-->
+        </button>
+    </div>
+</div>

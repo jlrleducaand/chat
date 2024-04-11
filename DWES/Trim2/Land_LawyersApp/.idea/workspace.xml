@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="014107ac-39ad-4caa-bd74-76d806f7f6f9" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/src/main/resources/Abogados_Landoulssi_2023.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/application/backend/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/application/backend/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +69,7 @@
     "Spring Boot.jdk-21.executor": "Run",
     "Tomcat Server.Tomcat 10.1.16.executor": "Run",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/",
+    "last_opened_file_path": "C:/CLASES2023/2DAW_2324/DWES/Trim2/Land_LawyersApp",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -86,7 +88,7 @@
     ]
   }
 }]]></component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 10.1.16">
+  <component name="RunManager" selected="Spring Boot.jdk-19">
     <configuration name="jdk-19" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <option name="ALTERNATIVE_JRE_PATH" value="openjdk-19" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -221,6 +223,7 @@
       <workItem from="1711012424428" duration="222000" />
       <workItem from="1711016752805" duration="11107000" />
       <workItem from="1712014682140" duration="1620000" />
+      <workItem from="1712223534385" duration="3700000" />
     </task>
     <servers />
   </component>

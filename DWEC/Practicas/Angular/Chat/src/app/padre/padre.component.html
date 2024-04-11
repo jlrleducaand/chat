@@ -1,0 +1,28 @@
+<div class="">
+    <p>padre works!</p>
+
+    <div class="container padre row  py-4 my-4">
+        <h4 class=" col-1 px-3"> Turno: </h4>
+        <ng-container class=" px-3">
+            <h4 class="col-2 ">{{ turno }}</h4>
+        </ng-container>
+        <h4 class=" col-1  px-3"> Cola: </h4>
+        <ng-container class="px-3"
+                      *ngFor="let item of cola">
+            <h4 class="col-1"> {{ item }} </h4>
+        </ng-container>
+
+
+    </div>
+    <div class="row container">
+        <app-hijo class=" hijo col d-flex" *ngFor="let item of solicitantes"
+                  [nombreHijo]="item.nombre"
+                  [id]="item.id"
+                  [imagenHijo]="item.imagen"
+                  [estadoHijo]="item.estado"
+                  (evPideTurno)="verificaTurno($event)"
+                  [evAbrirPadre]="evAbrir"
+        ></app-hijo>
+
+    </div>
+</div>
