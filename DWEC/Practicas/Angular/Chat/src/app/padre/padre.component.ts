@@ -4,6 +4,7 @@ import {JsonPipe, NgClass, NgForOf, NgIf} from "@angular/common";
 import {PersonaInterface} from "./personaInterface";
 import {FormsModule} from "@angular/forms";
 import {SolicitanteService} from "../solicitante.service";
+import {Observable} from "rxjs";
 
 @Component({
     selector: 'app-padre',
@@ -17,7 +18,7 @@ import {SolicitanteService} from "../solicitante.service";
     styleUrl: './padre.component.css'
 })
 export class PadreComponent implements OnInit {
-
+    solicitantes:PersonaInterface[] = [];
     cola: number[] = [];
     turno: string | undefined = "";
     turnoOcupado:boolean = false;
@@ -27,7 +28,9 @@ export class PadreComponent implements OnInit {
     constructor(private  solicitanteService: SolicitanteService) {
     }
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        this.obtenerSolicitantes();
+    }
 
     verificaTurno($event: PersonaInterface) {
         if ($event) {
@@ -71,5 +74,9 @@ export class PadreComponent implements OnInit {
         }
     }
 
+    obtenerSolicitantes(){
+        this.solicitanteService.getAllPersonas()
+            .subscribe(solicitantes => this.solicitantes = solicitantes)
+    }
 
 }

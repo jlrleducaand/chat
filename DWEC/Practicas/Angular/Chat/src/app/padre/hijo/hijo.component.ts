@@ -2,6 +2,8 @@ import {ChangeDetectorRef, Component, EventEmitter, Input, OnChanges, OnInit, Ou
 import {NgIf, NgOptimizedImage} from "@angular/common";
 import {PersonaInterface} from "../personaInterface";
 
+import {SolicitanteService} from "../../solicitante.service";
+
 @Component({
     selector: 'app-hijo',
     standalone: true,
@@ -11,10 +13,9 @@ import {PersonaInterface} from "../personaInterface";
     templateUrl: './hijo.component.html',
     styleUrl: './hijo.component.css'
 })
-export class HijoComponent {
+export class HijoComponent implements OnInit{
 
-    imagenes: string[] = ["./assets/imagenes/joven3a.png", "./assets/imagenes/joven3b.png", "./assets/imagenes/joven3c.png"]
-    estados: string[] = ["Pedir Turno", "Dejar Cola", "Dejar Turno"];
+
 
     @Input() persona: PersonaInterface | undefined = {} as PersonaInterface;
     @Input() turnoOcupado: boolean = false;
@@ -26,13 +27,19 @@ export class HijoComponent {
     @Output() evActualizaTurno: EventEmitter<PersonaInterface> = new EventEmitter<PersonaInterface>();
 
     solicitantesHijo: PersonaInterface[] = [];
+    imagenes: string[] = [];
+    estados: string[] = [];
 
-    constructor() {
+    constructor(private solicitanteService: SolicitanteService) {
         if (this.solicitantes) {
             this.solicitantesHijo = {...this.solicitantes}
         }
     }
 
+    ngOnInit(): void {
+        this.imagenes = this.solicitanteService.getAllEstados();
+        this.estados = this.solicitanteService.getAllEstados();
+    }
 
     botonPulsado() {
         this.evActualizaTurno.emit(this.persona);
@@ -136,5 +143,7 @@ export class HijoComponent {
         this.cola = this.cola.filter(x => x !== this.persona?.id);
         this.botonPulsado()
     }
+
+
 }
 
