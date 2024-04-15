@@ -3,6 +3,7 @@ import {HijoComponent} from "./hijo/hijo.component";
 import {JsonPipe, NgClass, NgForOf, NgIf} from "@angular/common";
 import {PersonaInterface} from "./personaInterface";
 import {FormsModule} from "@angular/forms";
+import {SolicitanteService} from "../solicitante.service";
 
 @Component({
     selector: 'app-padre',
@@ -17,19 +18,14 @@ import {FormsModule} from "@angular/forms";
 })
 export class PadreComponent implements OnInit {
 
-    solicitantes: PersonaInterface[] = [
-        {id: 1, nombre: "Mario"     , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 2, nombre: "Duarte"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 3, nombre: "Carmen"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 4, nombre: "Ismael"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 5, nombre: "Jose Luis" , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 6, nombre: "David"     , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"}
-    ]
     cola: number[] = [];
     turno: string | undefined = "";
     turnoOcupado:boolean = false;
     colaOcupada: boolean = false;
     personaRecibida: PersonaInterface = {} as PersonaInterface;
+
+    constructor(private  solicitanteService: SolicitanteService) {
+    }
 
     ngOnInit(): void {}
 
