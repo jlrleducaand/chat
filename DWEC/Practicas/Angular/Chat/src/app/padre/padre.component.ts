@@ -37,7 +37,7 @@ export class PadreComponent implements OnInit {
     }
     // prueba de grabacion
     verificaTurno($event: number) {
-        this.solicitanteRecibido = this.solicitantes.find(x => x.id === $event);
+        this.solicitanteRecibido = this.solicitantes.find(x => x.id === $event.valueOf());
         if (this.solicitanteRecibido) {
             if (this.turno === "") {
                 this.turno = this.solicitanteRecibido.nombre;
@@ -83,16 +83,5 @@ export class PadreComponent implements OnInit {
         });
         return nombre;
     }
-
-    cambiarEstado() {
-        console.log("boton de Hijo Pulsado", this.estadoSesion);
-        if (this.turno != "") {
-            this.estadoSesion = !this.estadoSesion;
-            this.evAbrir.emit(this.estadoSesion);
-
-        }
-
-    }
-
 
 }
