@@ -1,8 +1,8 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {SolicitanteInterface} from "./solicitanteInterface";
 import {HijoComponent} from "./hijo/hijo.component";
 import {JsonPipe, NgClass, NgForOf, NgIf} from "@angular/common";
 import {PersonaInterface} from "./personaInterface";
+import {FormsModule} from "@angular/forms";
 
 @Component({
     selector: 'app-padre',
@@ -10,14 +10,14 @@ import {PersonaInterface} from "./personaInterface";
     imports: [
         HijoComponent,
         NgForOf,
-        NgIf, JsonPipe, NgClass
+        NgIf, JsonPipe, NgClass, FormsModule
     ],
     templateUrl: './padre.component.html',
     styleUrl: './padre.component.css'
 })
 export class PadreComponent implements OnInit {
 
-    solicitantes: SolicitanteInterface[] = [
+    solicitantes: PersonaInterface[] = [
         {id: 1, nombre: "Mario"     , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
         {id: 2, nombre: "Duarte"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
         {id: 3, nombre: "Carmen"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
@@ -26,42 +26,53 @@ export class PadreComponent implements OnInit {
         {id: 6, nombre: "David"     , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"}
     ]
     cola: number[] = [];
-    turno: string = "";
-    personaRecibida: PersonaInterface | undefined = {} as SolicitanteInterface;
-    estadoSesion: boolean = false;
+    turno: string | undefined = "";
+    turnoOcupado:boolean = false;
+    colaOcupada: boolean = false;
+    personaRecibida: PersonaInterface = {} as PersonaInterface;
 
-    evActualizaSolicitantes: EventEmitter<any> = new EventEmitter<any>();
 
     ngOnInit(): void {
+
     }
 
     verificaTurno($event: PersonaInterface) {
+        console.log("log " + $event.nombre)
         this.personaRecibida = $event;
-        if (this.personaRecibida.estado === "Dejar Turno"){
-            this.turno = this.personaRecibida.nombre;
-        }else if(this.personaRecibida.estado === "Dejar Cola"){
-            this.cola.push(this.personaRecibida.id);
-        }else if(this.personaRecibida.estado === "Pedir Turno"){
-            this.cola = this.cola.filter(id => id !== this.personaRecibida?.id);
+
+        if (!this.colaOcupada && !this.turnoOcupado){
+            this.entraEnTurno();
+        } else if (this.personaRecibida.nombre === this.turno){
+            this.abandonaTurno();
+        } else if (this.turnoOcupado
+                   && this.turno !== this.personaRecibida.nombre
+                   && !this.cola.includes(this.personaRecibida.id)){
+            this.entraEnCola()
+        } else {
+            this.abandonaCola()
         }
-
     }
 
-    siguiente(id: number) {
-        let nombre = "";
-        this.solicitantes.forEach((s) => {
-            if (s.id === id) {
-                nombre = s.nombre;
-                s.estado = "Termina Turno"
-                s.imagen = "./assets/imagenes/joven3c.png"
-                this.personaRecibida = s;
+    entraEnTurno() {
+            this.turno = this.personaRecibida.nombre;
+            this.turnoOcupado = !this.turnoOcupado;
 
-            }
-        });
-        return nombre;
     }
+    abandonaTurno(){
+        this.turno = "";
+        this.turnoOcupado = !this.turnoOcupado;
 
-
+    }
+    entraEnCola(){
+        if (this.cola.length > 0){
+            this.colaOcupada = true;
+        }
+    }
+    abandonaCola(){
+        if (this.cola.length <1){
+            this.colaOcupada = false;
+        }
+    }
 
 
 }

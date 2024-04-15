@@ -1,7 +1,7 @@
 export interface PersonaInterface {
 
     id: number;
-    nombre: string;
-    imagen: string;
-    estado: string;
+    nombre: string | undefined;
+    imagen: string | undefined;
+    estado: string | undefined;
 }
