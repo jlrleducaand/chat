@@ -17,15 +17,10 @@ export class HijoComponent implements OnInit{
   @Input() imagenHijo: string = "";
   @Input() estadoHijo: string = "Pedir Turno"
 
-
-
-  @Input() evAbrirPadre: EventEmitter<boolean> = new EventEmitter<boolean>();
   @Output() evPideTurno: EventEmitter<number> = new EventEmitter<number>();
 
 
   ngOnInit(): void {
-    this.evAbrirPadre.subscribe(() =>
-    console.log("Recibe Abrir o Cerrar"))
 
   }
   pideTurno() {

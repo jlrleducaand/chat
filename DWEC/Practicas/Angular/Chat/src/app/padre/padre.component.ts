@@ -41,16 +41,16 @@ export class PadreComponent implements OnInit {
         if (this.solicitanteRecibido) {
             if (this.turno === "") {
                 this.turno = this.solicitanteRecibido.nombre;
-                console.log("añadido nombre a turno " + $event);
+                console.log("añadido nombre a turno " + this.solicitanteRecibido.id);
                 this.solicitanteRecibido.estado = "Terminar Turno";
                 this.solicitanteRecibido.imagen = "./assets/imagenes/joven3c.png";
 
-            } else if (!this.cola.includes($event) &&
-                this.turno != this.solicitantes[$event - 1].nombre) {
-                this.cola.push($event);
+            } else if (!this.cola.includes(this.solicitanteRecibido.id) &&
+                this.turno != this.solicitantes[this.solicitanteRecibido.id].nombre) {
+                this.cola.push(this.solicitanteRecibido.id);
                 this.solicitanteRecibido.imagen = "./assets/imagenes/joven3b.png";
                 this.solicitanteRecibido.estado = "Salir Cola"
-                console.log("Salido de la Cola" + $event);
+                console.log("Salido de la Cola" + this.solicitanteRecibido);
                 console.log(this.cola);
 
             } else if (this.solicitanteRecibido.nombre === this.turno) {
