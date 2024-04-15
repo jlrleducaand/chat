@@ -1,7 +1,7 @@
 import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {SolicitanteInterface} from "./solicitanteInterface";
 import {HijoComponent} from "./hijo/hijo.component";
 import {JsonPipe, NgClass, NgForOf, NgIf} from "@angular/common";
+import {PersonaInterface} from "./personaInterface";
 
 @Component({
     selector: 'app-padre',
@@ -16,7 +16,7 @@ import {JsonPipe, NgClass, NgForOf, NgIf} from "@angular/common";
 })
 export class PadreComponent implements OnInit {
 
-    solicitantes: SolicitanteInterface[] = [
+    solicitantes: PersonaInterface[] = [
         {id: 1, nombre: "Mario", imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
         {id: 2, nombre: "Duarte", imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
         {id: 3, nombre: "Carmen", imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
@@ -26,7 +26,7 @@ export class PadreComponent implements OnInit {
     ]
     cola: number[] = [];
     turno: string = "";
-    solicitanteRecibido: SolicitanteInterface | undefined = {} as SolicitanteInterface;
+    solicitanteRecibido: PersonaInterface | undefined = {} as PersonaInterface;
     estadoSesion: boolean = false;
 
     @Input() evPidiendoTurno: EventEmitter<number> = new EventEmitter<number>();
@@ -35,7 +35,7 @@ export class PadreComponent implements OnInit {
 
     ngOnInit(): void {
     }
-
+    // prueba de grabacion
     verificaTurno($event: number) {
         this.solicitanteRecibido = this.solicitantes.find(x => x.id === $event);
         if (this.solicitanteRecibido) {
@@ -46,7 +46,7 @@ export class PadreComponent implements OnInit {
                 this.solicitanteRecibido.imagen = "./assets/imagenes/joven3c.png";
 
             } else if (!this.cola.includes(this.solicitanteRecibido.id) &&
-                this.turno != this.solicitantes[this.solicitanteRecibido.id].nombre) {
+                this.turno != this.solicitanteRecibido.nombre) {
                 this.cola.push(this.solicitanteRecibido.id);
                 this.solicitanteRecibido.imagen = "./assets/imagenes/joven3b.png";
                 this.solicitanteRecibido.estado = "Salir Cola"
