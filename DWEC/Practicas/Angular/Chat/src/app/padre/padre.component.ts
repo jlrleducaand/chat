@@ -31,36 +31,37 @@ export class PadreComponent implements OnInit {
     colaOcupada: boolean = false;
     personaRecibida: PersonaInterface = {} as PersonaInterface;
 
-
-    ngOnInit(): void {
-
-    }
+    ngOnInit(): void {}
 
     verificaTurno($event: PersonaInterface) {
-        console.log("log " + $event.nombre)
-        this.personaRecibida = $event;
+        if ($event) {
+            this.personaRecibida = $event;
 
-        if (!this.colaOcupada && !this.turnoOcupado){
-            this.entraEnTurno();
-        } else if (this.personaRecibida.nombre === this.turno){
-            this.abandonaTurno();
-        } else if (this.turnoOcupado
-                   && this.turno !== this.personaRecibida.nombre
-                   && !this.cola.includes(this.personaRecibida.id)){
-            this.entraEnCola()
-        } else {
-            this.abandonaCola()
+            if (this.personaRecibida.estado === "Dejar Turno") {
+                console.log("entra en if 1");
+                this.entraEnTurno();
+            } else if (this.personaRecibida.estado === "Pedir Turno"
+                && this.turno === this.personaRecibida.nombre) {
+                this.abandonaTurno();
+            } else if (this.personaRecibida.estado === "Pedir Turno"
+                && this.turno !== this.personaRecibida.nombre) {
+                this.entraEnCola()
+            } else {
+                this.abandonaCola()
+            }
+        } else{
+            console.log("el evento recibido es indefinido")
         }
     }
-
     entraEnTurno() {
+        console.log(this.personaRecibida.estado)
             this.turno = this.personaRecibida.nombre;
-            this.turnoOcupado = !this.turnoOcupado;
+            this.turnoOcupado = true;
 
     }
     abandonaTurno(){
         this.turno = "";
-        this.turnoOcupado = !this.turnoOcupado;
+        this.turnoOcupado = false;
 
     }
     entraEnCola(){

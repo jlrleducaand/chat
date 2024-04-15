@@ -1,4 +1,4 @@
-import {ChangeDetectorRef, Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {ChangeDetectorRef, Component, EventEmitter, Input, OnChanges, OnInit, Output} from '@angular/core';
 import {NgIf, NgOptimizedImage} from "@angular/common";
 import {PersonaInterface} from "../personaInterface";
 
@@ -11,34 +11,25 @@ import {PersonaInterface} from "../personaInterface";
     templateUrl: './hijo.component.html',
     styleUrl: './hijo.component.css'
 })
-export class HijoComponent implements OnInit {
+export class HijoComponent {
 
     imagenes: string[] = ["./assets/imagenes/joven3a.png", "./assets/imagenes/joven3b.png", "./assets/imagenes/joven3c.png"]
     estados: string[] = ["Pedir Turno", "Dejar Cola", "Dejar Turno"];
 
     @Input() persona: PersonaInterface | undefined = {} as PersonaInterface;
-    @Input() personaTurno: string | undefined = "";
     @Input() turnoOcupado: boolean = false;
     @Input() colaOcupada: boolean = false;
-    @Input() cola: number[] = [];
     @Input() solicitantes: PersonaInterface[] = [];
-
+    @Input() cola: number[] = [];
+    @Input() turno: string | undefined = "";
 
     @Output() evActualizaTurno: EventEmitter<PersonaInterface> = new EventEmitter<PersonaInterface>();
 
     solicitantesHijo: PersonaInterface[] = [];
-    personaHijo: PersonaInterface | undefined = {} as PersonaInterface;
 
     constructor() {
         if (this.solicitantes) {
             this.solicitantesHijo = {...this.solicitantes}
-        }
-    }
-
-    ngOnInit(): void {
-        // aseguramos de estar actualizado el personajeHijo
-        if (this.persona) {
-            this.personaHijo = {...this.persona}
         }
     }
 
@@ -48,52 +39,64 @@ export class HijoComponent implements OnInit {
     }
 
     verificaTurno(persona: PersonaInterface | undefined) {
-        console.log("Entro en verificar turno: " + this.personaHijo!.nombre)
+            if (persona !== undefined) {
+                console.log("Entro en verificar turno: " + persona.nombre)
 
-        // A Turno Si turno y cola vacias
-        if (!this.turnoOcupado && !this.colaOcupada) {
-            console.log("Entra a Turno: " + persona?.nombre);
-            console.log("Estado de la Cola: " + this.cola);
-            console.log("Turno:" + this.turnoOcupado)
+                // A Turno Si turno y cola vacias
+                if (!this.turnoOcupado && !this.colaOcupada) {
+                    console.log("Entra a Turno: " + persona.nombre);
+                    console.log("Estado de la Cola: " + this.cola);
+                    console.log("Turno antes de metodo:" + this.turnoOcupado)
 
-            this.persona_A_Turno();
+                    this.persona = persona;
+                    this.persona_A_Turno();
 
-            // Deja el turno si eres Turno  y  reemplaza turno
-        } else if (this.turnoOcupado
-            && this.personaTurno === this.personaHijo?.nombre) {
-            console.log("Persona Deja Turno: " + this.personaTurno)
+                    // Deja el turno si eres Turno  y  reemplaza turno
+                } else if (this.turnoOcupado
+                    && this.turno === persona.nombre) {
+                    console.log("Persona Deja Turno: " + this.turno)
 
-            this.dejar_Turno();
+                    this.persona = persona;
+                    this.dejar_Turno();
 
-            // A Cola si no estas ya en ella
-        } else if (!this.cola.includes(this.personaHijo!.id)
-            && this.personaTurno != this.personaHijo!.nombre) {
-            console.log("Entra en A cola: " + this.personaHijo!.id)
+                    // A Cola si no estas ya en ella
+                } else if (!this.cola.includes(persona.id)
+                    && this.turno != persona.nombre) {
+                    console.log("Entra en A cola: " + persona.id)
 
-            this.persona_A_Cola()
+                    this.persona = persona;
+                    this.persona_A_Cola()
 
-            // Abandona la cola sin ir a turno
-        } else if(this.cola.includes(this.personaHijo!.id)) {
-            this.dejar_Cola(this.personaHijo!.id)
-        }
+                    // Abandona la cola sin ir a turno
+                } else if (this.cola.includes(persona.id)) {
+                    this.persona = persona;
+                    this.dejar_Cola(this.persona.id)
+                }
+            }else{
+                console.log("persona recibida undefined")
+            }
     }
 
-
     persona_A_Turno() {
-        this.personaHijo!.estado = this.estados[2];
-        this.personaHijo!.imagen = this.imagenes[2];
-        this.personaTurno = this.personaHijo?.nombre;
-
+        if (this.persona !== undefined) {
+            this.persona.estado = this.estados[2];
+            this.persona.imagen = this.imagenes[2];
+            this.turno = this.persona.nombre;
+        }
         this.botonPulsado()
     }
 
     dejar_Turno() {
-        this.personaHijo!.imagen = this.imagenes[0];
-        this.personaHijo!.estado = this.estados[0];
-        this.turnoOcupado = false;
-        this.personaTurno = "";
+        if (this.persona !== undefined) {
+            this.persona.imagen = this.imagenes[0];
+            this.persona.estado = this.estados[0];
+            console.log(this.persona.imagen)
+            console.log("envio al padre la persona que deja el turno: " + this.persona.nombre + "--")
 
-        console.log("envio al padre la persona que deja el turno: " + this.persona?.nombre + "--")
+        }
+        this.turnoOcupado = false;
+        this.turno = "";
+
 
         // Sustituir a Turno
         if (!this.colaOcupada) {
@@ -105,21 +108,24 @@ export class HijoComponent implements OnInit {
     }
 
     siguiente_A_Turno() {
-        this.personaHijo = this.solicitantes.find(x => x.id === this.cola[0]);
-        this.personaHijo!.estado = this.estados[2];
-        this.personaHijo!.imagen = this.imagenes[2];
-        this.personaTurno = this.personaHijo?.nombre;
+        this.persona = this.solicitantes.find(x => x.id === this.cola[0]);
+        if (this.persona !== undefined) {
+            this.persona.estado = this.estados[2];
+            this.persona.imagen = this.imagenes[2];
+            this.turno = this.persona.nombre;
+        }
         this.cola.shift();
 
         this.botonPulsado();
     }
 
     persona_A_Cola() {
-        console.log("Entro en Persona a cola " + this.personaHijo!.nombre);
-        this.personaHijo!.imagen = this.imagenes[1];
-        this.personaHijo!.estado = this.estados[1];
-        console.log("Cola antes de añadir: " + this.cola);
-        this.cola.push(this.personaHijo!.id);
+        console.log("Entro en Persona a cola " + this.persona!.nombre);
+        if (this.persona !== undefined) {
+            this.persona.imagen = this.imagenes[1];
+            this.persona.estado = this.estados[1];
+        }
+        this.cola.push(this.persona!.id);
 
         console.log("El usuario ya está en la Cola: " + this.cola);
 
@@ -127,7 +133,7 @@ export class HijoComponent implements OnInit {
     }
 
     dejar_Cola(id: number){
-        this.cola = this.cola.filter(x => x !== this.personaHijo?.id);
+        this.cola = this.cola.filter(x => x !== this.persona?.id);
         this.botonPulsado()
     }
 }

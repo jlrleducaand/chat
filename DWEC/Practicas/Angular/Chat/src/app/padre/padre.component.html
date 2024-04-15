@@ -15,10 +15,10 @@
     <div class="row container">
         <app-hijo class=" hijo col d-flex" *ngFor="let item of solicitantes"
                   [persona] = "item"
-                  [personaTurno]="turno"
                   [turnoOcupado]="turnoOcupado"
                   [colaOcupada] = "colaOcupada"
-                  [cola] = "cola"
+                  [cola]="cola"
+                  [turno] = "turno"
                   (evActualizaTurno)="verificaTurno($event)"
         ></app-hijo>
     </div>
