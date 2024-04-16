@@ -1,10 +1,9 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {HijoComponent} from "./hijo/hijo.component";
 import {JsonPipe, NgClass, NgForOf, NgIf} from "@angular/common";
 import {PersonaInterface} from "./personaInterface";
 import {FormsModule} from "@angular/forms";
 import {SolicitanteService} from "../solicitante.service";
-import {Observable} from "rxjs";
 
 @Component({
     selector: 'app-padre',
@@ -34,7 +33,7 @@ export class PadreComponent implements OnInit {
 
     verificaTurno($event: PersonaInterface) {
         if ($event) {
-            this.personaRecibida = $event;
+            this.personaRecibida = {...$event};
 
             if (this.personaRecibida.estado === "Dejar Turno") {
                 console.log("entra en if 1");

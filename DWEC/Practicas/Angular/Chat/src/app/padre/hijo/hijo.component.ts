@@ -37,7 +37,7 @@ export class HijoComponent implements OnInit{
     }
 
     ngOnInit(): void {
-        this.imagenes = this.solicitanteService.getAllEstados();
+        this.imagenes = this.solicitanteService.getAllImagenes();
         this.estados = this.solicitanteService.getAllEstados();
     }
 
@@ -47,6 +47,8 @@ export class HijoComponent implements OnInit{
 
     verificaTurno(persona: PersonaInterface | undefined) {
             if (persona !== undefined) {
+                this.persona = persona
+
                 console.log("Entro en verificar turno: " + persona.nombre)
 
                 // A Turno Si turno y cola vacias
@@ -63,7 +65,6 @@ export class HijoComponent implements OnInit{
                     && this.turno === persona.nombre) {
                     console.log("Persona Deja Turno: " + this.turno)
 
-                    this.persona = persona;
                     this.dejar_Turno();
 
                     // A Cola si no estas ya en ella
@@ -71,13 +72,11 @@ export class HijoComponent implements OnInit{
                     && this.turno != persona.nombre) {
                     console.log("Entra en A cola: " + persona.id)
 
-                    this.persona = persona;
                     this.persona_A_Cola()
 
                     // Abandona la cola sin ir a turno
                 } else if (this.cola.includes(persona.id)) {
-                    this.persona = persona;
-                    this.dejar_Cola(this.persona.id)
+                    this.dejar_Cola(persona.id)
                 }
             }else{
                 console.log("persona recibida undefined")
