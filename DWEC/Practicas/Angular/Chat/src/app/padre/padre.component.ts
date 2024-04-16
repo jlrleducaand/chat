@@ -27,11 +27,6 @@ export class PadreComponent implements OnInit {
     cola: number[] = [];
     turno: string = "";
     solicitanteRecibido: PersonaInterface | undefined = {} as PersonaInterface;
-    estadoSesion: boolean = false;
-
-    @Input() evPidiendoTurno: EventEmitter<number> = new EventEmitter<number>();
-
-    @Output() evAbrir: EventEmitter<boolean> = new EventEmitter<boolean>();
 
     ngOnInit(): void {
     }
