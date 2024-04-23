@@ -6,50 +6,30 @@ import {HttpClient} from "@angular/common/http";
   providedIn: 'root'
 })
 export class SolicitanteService {
-  imagenes: string[] = []
-  estados: string[] = [];
-  solicitantes: PersonaInterface[] = [];
+  imagenes: string[] = ["./assets/imagenes/joven3a.png", "./assets/imagenes/joven3b.png", "./assets/imagenes/joven3c.png"];
+  estados: string[] = ["Pedir Turno", "Dejar Cola", "Dejar Turno"];
+  solicitantes: PersonaInterface[] = [
+      {id: 5, nombre: "Mario"     , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
+      {id: 6, nombre: "Duarte"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
+      {id: 4, nombre: "Carmen"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
+      {id: 3, nombre: "Ismael"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
+      {id: 1, nombre: "Jose Luis" , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
+      {id: 2, nombre: "David"     , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"}
+  ];
 
 
-  constructor(private http:HttpClient) {
+  constructor() {
 
   }
 
   getSolicitantes(){
-    return this.cargaSolicitantes()
-  }
-  cargaEstados(){
-      this.http.get<string[]>('assets/JSON/estados.json').subscribe(
-          (data) => {
-              this.estados = data;
-              console.log('Estados cargados:', this.estados);
-          },
-          (error) => {
-              console.error('Error al cargar estados:', error);
-          }
+    return this.solicitantes
   }
 
-  cargaImagenes(){
-      this.http.get<string[]>('assets/JSON/imagenes.json').subscribe(
-          (data) => {
-              this.imagenes = data;
-              console.log('Imagenes cargadas:', this.imagenes);
-          },
-          (error) => {
-              console.error('Error al cargar imagenes:', error);
-          }
-  }
 
-  cargaSolicitantes(){
-  this.http.get<PersonaInterface[]>('assets/JSON/solicitantes.json').subscribe(
-      (data) => {
-        this.solicitantes = data;
-        console.log('Solicitantes cargados:', this.solicitantes);
-      },
-      (error) => {
-        console.error('Error al cargar solicitantes:', error);
-      }
-  }
+
+
+
 
 
 }
