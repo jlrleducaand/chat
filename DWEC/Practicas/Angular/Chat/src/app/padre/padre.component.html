@@ -1,8 +1,9 @@
 <div class="">
+
     <div class="container padre row  py-4 my-4">
         <h4 class=" col-1 px-3"> Turno: </h4>
         <ng-container class=" px-3">
-            <h4 class="col-2 "> {{ turno }} </h4>
+            <h4 class="col-2 ">{{ turno }}</h4>
         </ng-container>
         <h4 class=" col-1  px-3"> Cola: </h4>
         <ng-container class="px-3"
@@ -14,12 +15,11 @@
     </div>
     <div class="row container">
         <app-hijo class=" hijo col d-flex" *ngFor="let item of solicitantes"
-                  [persona] = "item"
-                  [turnoOcupado]="turnoOcupado"
-                  [colaOcupada] = "colaOcupada"
-                  [cola]="cola"
-                  [turno] = "turno"
-                  (evActualizaTurno)="verificaTurno($event)"
+                  [persona]="item"
+                  [solicitantes]="solicitantes"
+                  [evTurnoIdP]="evTurnoId"
+                  (evPideTurno)="verificaTurno($event)"
         ></app-hijo>
+
     </div>
 </div>
