@@ -3,6 +3,7 @@ import {HijoComponent} from "./hijo/hijo.component";
 import {JsonPipe, NgClass, NgForOf, NgIf} from "@angular/common";
 import {PersonaInterface} from "./personaInterface";
 import {FormsModule} from "@angular/forms";
+import {SolicitanteService} from "../solicitante.service";
 
 @Component({
     selector: 'app-padre',
@@ -17,20 +18,19 @@ import {FormsModule} from "@angular/forms";
 })
 export class PadreComponent implements OnInit {
 
-    solicitantes: PersonaInterface[] = [
-        {id: 1, nombre: "Mario"     , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 2, nombre: "Duarte"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 3, nombre: "Carmen"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 4, nombre: "Ismael"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 5, nombre: "Jose Luis" , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 6, nombre: "David"     , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"}
-    ]
+
     cola: number[] = [];
     turno: string | undefined = "";
     turnoOcupado:boolean = false;
     colaOcupada: boolean = false;
     evTurnoId: EventEmitter<number> = new EventEmitter<number>();
     personaRecibida: PersonaInterface = {} as PersonaInterface;
+
+
+    constructor(private solicitanteServices: SolicitanteService) {
+    }
+
+    solicitantes = this.solicitanteServices.getSolicitantes();
 
     ngOnInit(): void {}
 
@@ -94,7 +94,7 @@ export class PadreComponent implements OnInit {
     siguiente(){
         if (this.colaOcupada){
             console.log("la primera persona de la cola es " + this.cola[0])
-            let s = this.solicitantes.find(s => s.id === this.cola[0])
+            let s = this.solicitanteServices.solicitantes.find(s => s.id === this.cola[0])
             console.log("la persona que ocupara el turno es ahora " + s?.nombre)
             if (s) {
                 this.turno = s.nombre;
