@@ -1,11 +1,11 @@
 <div class="hijo">
     <div>
-        <img [src]="persona.imagen" class="card-img-top" alt="imagen hijo">
+        <img [src]="imagen" class="card-img-top" alt="imagen hijo">
         <div class="card-body">
             <h3 class="card-title">{{ persona.nombre }}</h3>
             <h3 class="card-text"> {{ persona.id }}</h3>
             <button class="d-flex btn btn-primary" (click)="botonPulsado(persona)"
-            >{{ persona.estado }}
+            >{{ estado }}
             </button>
         </div>
     </div>

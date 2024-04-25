@@ -1,8 +1,9 @@
-import {Component, EventEmitter, OnInit} from '@angular/core';
+import {Component, EventEmitter, OnChanges, OnInit} from '@angular/core';
 import {HijoComponent} from "./hijo/hijo.component";
 import {JsonPipe, NgClass, NgForOf, NgIf} from "@angular/common";
 import {PersonaInterface} from "./personaInterface";
 import {FormsModule} from "@angular/forms";
+import {SolicitanteService} from "../solicitante.service";
 
 @Component({
     selector: 'app-padre',
@@ -15,24 +16,36 @@ import {FormsModule} from "@angular/forms";
     templateUrl: './padre.component.html',
     styleUrl: './padre.component.css'
 })
-export class PadreComponent implements OnInit {
+export class PadreComponent implements OnInit, OnChanges {
 
-    solicitantes: PersonaInterface[] = [
-        {id: 1, nombre: "Mario"     , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 2, nombre: "Duarte"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 3, nombre: "Carmen"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 4, nombre: "Ismael"    , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 5, nombre: "Jose Luis" , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"},
-        {id: 6, nombre: "David"     , imagen: "./assets/imagenes/joven3a.png", estado: "Pedir Turno"}
-    ]
+    solicitantes: PersonaInterface[] = [];
     cola: number[] = [];
     turno: string | undefined = "";
     turnoOcupado:boolean = false;
     colaOcupada: boolean = false;
     evTurnoId: EventEmitter<number> = new EventEmitter<number>();
     personaRecibida: PersonaInterface = {} as PersonaInterface;
+    estado:string ="";
+    imagen:string ="";
 
-    ngOnInit(): void {}
+    constructor(private solicitantesService: SolicitanteService) {
+        solicitantesService.getSolicitantes().subscribe({
+            next: (data) => {
+                this.solicitantes = data as PersonaInterface[];
+                console.log('Solicitantes cargados:', this.solicitantes);
+            },
+            error: (error) => {
+                console.error('Error al cargar solicitantes:', error);
+
+            }});
+    }
+
+    ngOnInit(): void {
+
+    }
+    ngOnChanges(){
+
+    }
 
     verificaTurno($event: PersonaInterface) {
         if ($event) {
@@ -67,7 +80,7 @@ export class PadreComponent implements OnInit {
         }
     }
     entraEnTurno() {
-        console.log("Mi estado todavia es" + this.personaRecibida.estado)
+        console.log("Mi estado todavia es" + this.estado)
             this.turno = this.personaRecibida.nombre;
             this.compruebaTurno()
             this.evTurnoId.emit(this.personaRecibida.id);

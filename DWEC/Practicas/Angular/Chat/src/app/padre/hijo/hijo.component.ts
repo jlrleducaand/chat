@@ -22,6 +22,9 @@ export class HijoComponent implements OnInit{
     @Input() evTurnoIdP= new EventEmitter<number>;
     @Output() evPideTurno: EventEmitter<PersonaInterface> = new EventEmitter<PersonaInterface>();
 
+
+    estado:string =this.estados[0];
+    imagen:string =this.imagenes[0];
     solicitantesHijo: PersonaInterface[] = [];
 
     constructor() {
@@ -38,20 +41,20 @@ export class HijoComponent implements OnInit{
     botonPulsado(p: PersonaInterface) {
         this.persona = p;
         console.log("Boton Pulsado envio evento a padre")
-        if (this.persona.estado === "Pedir Turno") {
+        if (this.estado === "Pedir Turno") {
                 console.log( "Pide Turno la persona: " + this.persona.nombre);
-            this.persona.imagen = this.imagenes[1];
-            this.persona.estado = this.estados[1];
+            this.imagen = this.imagenes[1];
+            this.estado = this.estados[1];
             // Esperando para turno
-        }else if(this.persona.estado === "Dejar Turno") {
+        }else if(this.estado === "Dejar Turno") {
             console.log("Envio al Padre que Quiero Dejar el Turno")
-            this.persona.imagen = this.imagenes[0];
-            this.persona.estado = this.estados[0];
+            this.imagen = this.imagenes[0];
+            this.estado = this.estados[0];
 
-        }else if(this.persona.estado === "Dejar Cola") {
+        }else if(this.estado === "Dejar Cola") {
             console.log("Dejo la Cola")
-            this.persona.imagen = this.imagenes[0];
-            this.persona.estado = this.estados[0];
+            this.imagen = this.imagenes[0];
+            this.estado = this.estados[0];
         }
         console.log(p)
         this.evPideTurno.emit(this.persona);
@@ -61,8 +64,8 @@ export class HijoComponent implements OnInit{
         console.log("verificando si soy el turno: " + this.persona.nombre)
 
         if (this.persona.id === id) {
-                this.persona.imagen = this.imagenes[2];
-                this.persona.estado = this.estados[2];
+                this.imagen = this.imagenes[2];
+                this.estado = this.estados[2];
             console.log("¡¡¡¡ YO SI SOY TURNO !!!!")
             }else{
             console.log("---- YO NO SOY TURNO ----")
